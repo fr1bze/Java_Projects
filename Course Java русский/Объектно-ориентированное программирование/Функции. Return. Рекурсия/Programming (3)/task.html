@@ -1,0 +1,15 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Отформатировать российский номер телефона</h1> 
+  <p>Напишите функцию <strong>format_number</strong>, которая&nbsp; будет принимать в качестве аргумента строку, которая должна содержать телефонный номер. И выводить его по образцу: 8 (987) 654-32-10.</p> 
+  <ul> 
+   <li>Телефонный номер должен состоять ровно из 11 цифр. Если в введённой строке&nbsp;больше или меньше&nbsp;<strong>символов</strong>, то функция должна вывести на экран&nbsp;"Неверное число символов".</li> 
+   <li>Если в номере встретится хотя бы один символ, который не является цифрой, то функция должна вывести на экран&nbsp;"Не все символы являются цифрами"</li> 
+   <li>Российские номера начинаются только с 8 (для простоты задачи). Если номер начинается не с 8, то функция должна вывести на экран "Это не российский номер телефона"</li> 
+   <li>Если с номером всё в порядке, то функция должна вывести на экран номер телефона по указанному выше образцу.</li> 
+  </ul> 
+  <p>Содержание функции&nbsp;<strong>main</strong>&nbsp;менять запрещено.</p> 
+  <p>Примечание: проверка условий должна выполняться в том же порядке, что и перечисленные выше условия. То есть, если в строке и не 11 символов и присутствует буква, то программа должна вывести:&nbsp;"Неверное число символов".</p>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">89876543210</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">8 (987) 654-32-10</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">8987654321</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Неверное число символов</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">8987654321q</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Не все символы являются цифрами</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">69876543210</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Это не российский номер телефона</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

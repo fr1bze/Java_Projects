@@ -1,0 +1,27 @@
+<html>
+ <head></head>
+ <body>
+  <h1>&nbsp;&nbsp;Реализация на Java</h1> 
+  <p>Для выполнения запросов будем использовать библиотеку java.net. Вот вам несколько полезных ссылок:</p> 
+  <ul> 
+   <li><a href="http://developer.alexanderklimov.ru/android/java/net.php" rel="noopener noreferrer nofollow">Сайт Александра Климова</a></li> 
+   <li><a href="https://javascopes.com/5-ways-to-make-http-requests-in-java-2p3-fca27bc8/" rel="noopener noreferrer nofollow">javascopes</a></li> 
+   <li><a href="https://habr.com/ru/post/459080/" rel="noopener noreferrer nofollow">habr</a></li> 
+  </ul> 
+  <pre><code class="language-java">import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class Main {
+    public static void main(String[] args) throws java.net.URISyntaxException, IOException, InterruptedException {
+        String uri = "https://www.google.com";
+        HttpRequest request = HttpRequest.newBuilder().uri(new URI(uri)).GET().build();
+        HttpResponse&lt;String&gt; response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println(response);
+        System.out.println(response.body());
+    }
+}</code></pre>
+ </body>
+</html>

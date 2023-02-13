@@ -1,0 +1,225 @@
+<html>
+ <head></head>
+ <body>
+  <table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 800px;"> 
+   <caption> 
+    <h1>Основные методы строк</h1> 
+   </caption> 
+   <thead> 
+    <tr> 
+     <th>Метод</th> 
+     <th>Описание</th> 
+    </tr> 
+    <tr> 
+     <td><strong>s.concat()</strong></td> 
+     <td>&nbsp;объединяет строки</td> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr> 
+     <td><strong>s.length()</strong></td> 
+     <td>&nbsp;возвращает длину строки</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.valueOf()</strong></td> 
+     <td>&nbsp;преобразует объект в строковый вид</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.join()</strong></td> 
+     <td>&nbsp;соединяет строки с учетом разделителя</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.сompare()</strong></td> 
+     <td>&nbsp;сравнивает две строки</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.charAt()</strong></td> 
+     <td>&nbsp;возвращает символ строки по индексу</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.getChars()</strong></td> 
+     <td>&nbsp;возвращает группу символов</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.equals()</strong></td> 
+     <td>&nbsp;сравнивает строки с учетом регистра</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.equalsIgnoreCase()</strong></td> 
+     <td>&nbsp;сравнивает строки без учета регистра</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.regionMatches()</strong></td> 
+     <td>&nbsp;сравнивает подстроки в строках</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.indexOf()</strong></td> 
+     <td>&nbsp;находит индекс первого вхождения подстроки в строку</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.isEmpty()</strong></td> 
+     <td>&nbsp;возвращает true, если строка пуста, иначе - false</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.lastIndexOf()</strong></td> 
+     <td>&nbsp;находит индекс последнего вхождения подстроки в строку</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.startsWith()</strong></td> 
+     <td>&nbsp;определяет, начинается ли строка с подстроки</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.endsWith()</strong></td> 
+     <td>&nbsp;определяет, заканчивается ли строка на определенную подстроку</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.replace()</strong></td> 
+     <td>&nbsp;заменяет в строке одну подстроку на другую</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.trim()</strong></td> 
+     <td>&nbsp;удаляет начальные и конечные пробелы</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.substring()</strong></td> 
+     <td> <p>&nbsp;возвращает подстроку, начиная с определенного индекса</p> <p>до конца или до определенного индекса</p> </td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.toLowerCase()</strong></td> 
+     <td>&nbsp;переводит все символы строки в нижний регистр</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.toUpperCase()</strong></td> 
+     <td>&nbsp;переводит все символы строки в верхний регистр</td> 
+    </tr> 
+    <tr> 
+     <td><strong>s.toCharArray()</strong></td> 
+     <td>&nbsp;преобразовывает&nbsp;строку в массив символов</td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <p>&nbsp;</p> 
+  <h2>Подробнее о методах:</h2> 
+  <p>Для соединения строк можно использовать операцию сложения ("+"):</p> 
+  <pre><code class="language-java">String str1 = "Java";
+String str2 = "Hello";
+String str3 = str1 + " " + str2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println(str3); // Hello Java</code></pre> 
+  <p>При этом если в операции сложения строк используется нестроковый объект, например, число, то этот объект преобразуется к строке:</p> 
+  <pre><code class="language-java">String str3 = "Год " + 2015;</code></pre> 
+  <p>Фактически же при сложении строк с нестроковыми объектами будет вызываться метод&nbsp;<strong>valueOf()</strong>&nbsp;класса String. Данный метод&nbsp;преобразует практически все типы данных к строке. Метод&nbsp;<code>concat()</code>&nbsp;принимает строку, с которой надо объединить вызывающую строку, и возвращает соединенную строку:</p> 
+  <pre><code class="language-java">String str1 = "Java";
+String str2 = "Hello";
+str2 = str2.concat(str1); // HelloJava</code></pre> 
+  <p>Поскольку строка рассматривается как набор символов, то мы можем применить метод<strong>&nbsp;length()</strong>&nbsp;для нахождения длины строки или длины набора символов:</p> 
+  <pre><code class="language-java">String str1 = "Java";
+System.out.println(str1.length()); // 4</code></pre> 
+  <p>Еще один метод объединения - метод&nbsp;join()&nbsp;позволяет объединить строки с учетом разделителя. Например, выше две строки сливались в одно слово "HelloJava", но в идеале мы бы хотели, чтобы две подстроки были разделены. И для этого используем метод&nbsp;<strong><code>join()</code></strong>:</p> 
+  <pre><code class="language-java">String str1 = "Java";
+String str2 = "Hello";
+String str3 = "Legasoft";
+String str = String.join(" - ", str2, str1, str3); // Hello - Java - Legasoft</code></pre> 
+  <p>Первым параметром идет разделитель, которым будут разделяться подстроки в общей строке, а все последующие параметры передают через запятую произвольный набор объединяемых подстрок - в данном случае три&nbsp;строки, хотя их может быть и больше. Так же можно объединять и массивы строк.</p> 
+  <pre><code class="language-java">String[] m = {"123", "456", "789"};
+String ans = String.join(" ", m);
+System.out.print(ans);</code></pre> 
+  <p>А с помощью метода<strong>&nbsp;toCharArray()</strong>&nbsp;можно обратно преобразовать строку в массив символов:</p> 
+  <pre><code class="language-java">String str = new String(new char[] {'h', 'e', 'l', 'l', 'o'});
+char[] helloArray = str.toCharArray();</code></pre> 
+  <h3>Извлечение символов и подстрок</h3> 
+  <p>Для извлечения символов по индексу в классе String определен метод&nbsp;char<strong> charAt(int index)</strong>. Он принимает индекс, по которому надо получить символов, и возвращает извлеченный символ:</p> 
+  <pre><code class="language-java">String str = "Java";
+char c = str.charAt(2);
+System.out.println(c); // v</code></pre> 
+  <p>Как и в массивах, индексация начинается с нуля.<br> Если надо извлечь сразу группу символов или подстроку, то можно использовать метод&nbsp;<strong>getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)</strong>. Он принимает следующие параметры:</p> 
+  <ul> 
+   <li> <p><code>srcBegin</code>: индекс в строке, с которого начинается извлечение символов</p> </li> 
+   <li> <p><code>srcEnd</code>: индекс в строке, до которого идет извлечение символов</p> </li> 
+   <li> <p><code>dst</code>: массив символов, в который будут извлекаться символы</p> </li> 
+   <li> <p><code>dstBegin</code>: индекс в массиве dst, с которого надо добавлять извлеченные из строки символы</p> </li> 
+  </ul> 
+  <pre><code class="language-java">String str = "Hello world!";
+int start = 6;
+int end = 11;
+char[] dst=new char[end - start];
+str.getChars(start, end, dst, 0);
+System.out.println(dst); // world</code></pre> 
+  <h3>Сравнение строк</h3> 
+  <p>Для сравнения строк используются методы&nbsp;<strong>equals()</strong>&nbsp;(с учетом регистра) и&nbsp;<strong>equalsIgnoreCase()</strong>&nbsp;(без учета регистра). Оба метода в качестве параметра принимают строку, с которой надо сравнить:</p> 
+  <pre><code class="language-java">String str1 = "Hello";
+String str2 = "hello";
+System.out.println(str1.equals(str2)); // false
+System.out.println(str1.equalsIgnoreCase(str2)); // true</code></pre> 
+  <p><br> Еще один специальный метод&nbsp;<strong>regionMatches()</strong>&nbsp;сравнивает отдельные подстроки в рамках двух строк. Он имеет следующие формы:&nbsp;</p> 
+  <table border="0" cellpadding="0" cellspacing="0"> 
+   <tbody> 
+    <tr> 
+     <td> <p>1</p> <p>2</p> </td> 
+     <td> <p><code>boolean</code> <code>regionMatches(</code><code>int</code> <code>toffset, String other,</code><code>int</code> <code>oofset,</code><code>int</code> <code>len)</code></p> <p><code>boolean</code> <code>regionMatches(</code><code>boolean</code> <code>ignoreCase,</code><code>int</code> <code>toffset, String other,</code><code>int</code> <code>oofset,</code><code>int</code> <code>len)</code></p> </td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <p>Метод принимает следующие параметры:</p> 
+  <ul> 
+   <li> <p><code>ignoreCase</code>: надо ли игнорировать регистр символов при сравнении. Если значение&nbsp;<code>true</code>, регистр игнорируется</p> </li> 
+   <li> <p><code>toffset</code>: начальный индекс в вызывающей строке, с которого начнется сравнение</p> </li> 
+   <li> <p><code>other</code>: строка, с которой сравнивается вызывающая</p> </li> 
+   <li> <p><code>oofset</code>: начальный индекс в сравниваемой строке, с которого начнется сравнение</p> </li> 
+   <li> <p><code>len</code>: количество сравниваемых символов в обеих строках</p> </li> 
+  </ul> 
+  <p>Используем метод:</p> 
+  <pre><code class="language-java">String str1 = "Hello world";
+String str2 = "I work";
+boolean result = str1.regionMatches(6, str2, 2, 3);
+System.out.println(result); // true</code></pre> 
+  <p>В данном случае метод сравнивает 3 символа с 6-го индекса первой строки ("wor") и 3 символа со 2-го индекса второй строки ("wor"). Так как эти подстроки одинаковы, то возвращается&nbsp;<code>true</code>.</p> 
+  <p><br> И еще одна пара методов&nbsp;int <strong>compareTo</strong>(String str)&nbsp;и&nbsp;int <strong>compareToIgnoreCase</strong>(String str)&nbsp;также позволяют сравнить две строки, но при этом они также позволяют узнать, больше ли одна строка, чем другая или нет. Если возвращаемое значение больше 0, то первая строка больше второй, если меньше нуля, то, наоборот, вторая больше первой. Если строки равны, то возвращается 0.</p> 
+  <p>Для определения больше или меньше одна строка, чем другая, используется лексикографический порядок. То есть, например, строка "A" меньше, чем строка "B", так как символ 'A' в алфавите стоит перед символом 'B'. Если первые символы строк равны, то в расчет берутся следующие символы. Например:</p> 
+  <pre><code class="language-java">String str1 = "hello";
+String str2 = "world";
+String str3 = "hell";
+
+System.out.println(str1.compareTo(str2)); // -15 - str1 меньше чем strt2
+System.out.println(str1.compareTo(str3)); // 1 - str1 больше чем str3</code></pre> 
+  <p>&nbsp;</p> 
+  <h3>Поиск в строке</h3> 
+  <p>Метод&nbsp;<strong>indexOf()</strong>&nbsp;находит индекс первого вхождения подстроки в строку, а метод&nbsp;<strong>lastIndexOf()</strong>&nbsp;- индекс последнего вхождения. Если подстрока не будет найдена, то оба метода возвращают -1:</p> 
+  <pre><code>String str = "Hello world";
+int index1 = str.indexOf('l'); // 2
+int index2 = str.indexOf("wo"); //6
+int index3 = str.lastIndexOf('l'); //9</code></pre> 
+  <p>Метод&nbsp;<strong>startsWith()&nbsp;</strong>позволяет определить начинается ли строка с определенной подстроки, а метод&nbsp;<strong>endsWith()</strong>&nbsp;позволяет определить заканчивается строка на определенную подстроку:</p> 
+  <pre><code class="language-java">String str = "myfile.exe";
+boolean start = str.startsWith("my"); //true
+boolean end = str.endsWith("exe"); //true</code></pre> 
+  <h3>Замена в строке</h3> 
+  <p>Метод&nbsp;<strong>replace()</strong>&nbsp;позволяет заменить в строке одну последовательность символов на другую:</p> 
+  <pre><code class="language-java">String str = "Hello world";
+String replStr1 = str.replace('l', 'd'); // Heddo wordd
+String replStr2 = str.replace("Hello", "Bye"); // Bye world</code></pre> 
+  <p>&nbsp;</p> 
+  <h3>Обрезка строки</h3> 
+  <p>Метод&nbsp;<strong>trim()</strong>&nbsp;позволяет удалить начальные и конечные пробелы:</p> 
+  <pre><code class="language-java">String str = "&nbsp; hello world&nbsp; ";
+str = str.trim(); // hello world</code></pre> 
+  <p>&nbsp;</p> 
+  <p>Метод&nbsp;<strong>substring()</strong>&nbsp;возвращает подстроку, начиная с определенного индекса до конца или до определенного индекса:</p> 
+  <pre><code class="language-java">String str = "Hello world";
+String substr1 = str.substring(6); // world
+String substr2 = str.substring(3,5); //lo</code></pre> 
+  <p>&nbsp;</p> 
+  <h3>Изменение регистра</h3> 
+  <p>Метод&nbsp;<strong>toLowerCase()&nbsp;</strong>переводит все символы строки в нижний регистр, а метод&nbsp;<strong>toUpperCase()</strong>&nbsp;- в верхний:</p> 
+  <pre><code class="language-java">String str = "Hello World";
+System.out.println(str.toLowerCase()); // hello world
+System.out.println(str.toUpperCase()); // HELLO WORLD</code></pre> 
+  <p>&nbsp;</p> 
+  <h3>Split</h3> 
+  <p>Метод&nbsp;<strong>split()</strong>&nbsp;позволяет разбить строку на подстроки по определенному разделителю. Разделитель - какой-нибудь символ или набор символов - передается в качестве параметра в метод. Например, разобьем текст на отдельные слова:</p> 
+  <pre><code class="language-java">String text = "FIFA will never regret it";
+String[] words = text.split(" ");
+for(String word : words){
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(word);
+}</code></pre>
+ </body>
+</html>

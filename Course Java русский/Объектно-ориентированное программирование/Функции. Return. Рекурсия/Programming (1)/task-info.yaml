@@ -1,0 +1,25 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Programm{
+
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            int ro = sc.nextInt();
+            int V = sc.nextInt();
+            int F = arhimed(ro, V);
+            System.out.println("F = " + F +"H");
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 27 Jul 2022 13:08:45 UTC
+record: -1

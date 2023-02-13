@@ -1,0 +1,47 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Операторы сравнения</h1> 
+  <p>Для записи сравнения используются различные операторы. Вот основные:</p> 
+  <ul> 
+   <li><strong>&gt;&nbsp; &nbsp; - больше</strong></li> 
+   <li><strong>&lt;&nbsp; &nbsp; - меньше</strong></li> 
+   <li><strong>&gt;=&nbsp; - больше или равно</strong></li> 
+   <li><strong>&lt;=&nbsp; - меньше или равно</strong></li> 
+   <li><strong>==&nbsp; -&nbsp;равно</strong></li> 
+   <li><strong>!=&nbsp; &nbsp;- не равно</strong></li> 
+  </ul> 
+  <p>Так же, для комбинирования условий используются следующие конструкции:</p> 
+  <ul> 
+   <li><strong>&amp;&amp;&nbsp; - логическое "И"</strong></li> 
+   <li><strong>|| -&nbsp; логическое "ИЛИ"</strong></li> 
+  </ul> 
+  <p>Если вы хотите комбинировать условия, то берите ваши "простые" условия, записывайте их в дополнительные круглые скобочки и соединяйте между собой с помощью <strong>&amp;&amp;</strong> или <strong>||.&nbsp;</strong></p> 
+  <p>Например:</p> 
+  <pre><code class="language-java">Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+int b = sc.nextInt();
+if ((a == 6) &amp;&amp; (b != 3)) {
+    System.out.println("Ура");
+}</code></pre> 
+  <p>Этот код выведет "Ура" только при условии, что первое число равно 6, а второе не равно 3.</p> 
+  <h1>Немножко про тип данных <strong>boolean и сравнение строк</strong></h1> 
+  <p>Что же можно записывать в качестве условия? Ответ простой - любое выражение, которое может быть либо истинным, либо ложным. Но это и есть тип данных <strong>boolean</strong>. Переменная такого типа может принимать значение либо <strong>true </strong>(истина, 1) либо <strong>false</strong> (ложь, 0). Поэтому, например, результат такого значения можно занести в переменную.&nbsp;</p> 
+  <pre><code class="language-java">Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+boolean a_is_pozitive = a &gt; 0;
+if (a_is_pozitive) {
+    System.out.println("Ваше число положительное");
+}</code></pre> 
+  <p>Есть команды, которые возвращают значение типа <strong>boolean</strong>.</p> 
+  <p>Строки - ссылочный тип данных, поэтому обычное сравнение для него не работает, вместо этого существует команда (правильно называть их, конечно, методы, но пока так) <strong>s1.equals(s2). </strong>Эта команда вернёт&nbsp;истину, если строки равны, и ложь, если нет. Знак "<strong>!</strong>" обозначает отрицание чего-либо. Если вы поставите его перед конструкцией, которая возвращает значение <strong>boolean</strong>, то&nbsp;<strong>!&nbsp;</strong>его инвертирует.&nbsp;Пример:</p> 
+  <pre><code class="language-java">Scanner sc = new Scanner(System.in);
+String s1 = sc.nextLine();
+String s2 = sc.nextLine();
+if (!s1.equals(s2)) {
+    System.out.println("Строки не совпадают");
+}else{
+    System.out.println("Строки совпадают");
+}</code></pre>
+ </body>
+</html>

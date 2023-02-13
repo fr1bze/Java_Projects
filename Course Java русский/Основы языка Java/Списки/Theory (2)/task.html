@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Модификация цикла for</h1> 
+  <p>В силу того, что циклом <strong>for </strong>часто перебирают элементы какой-либо структуры данных, появилась его модификация, известная как <strong>for .. in</strong>. Правда в <strong>Java</strong> ключевое слово <strong>in</strong> не пишется. Давайте посмотрим на пример реализации.&nbsp;</p> 
+  <p>Общий синтаксис выглядит так:</p> 
+  <pre><code>Пусть E - какой-то тип данных,
+mas - коллекция, котороая содержит в себе тип данных E
+for (E &lt;имя переменной&gt;: mas){
+    //тело цикла
+}</code></pre> 
+  <p>Пример конкретной реализации:&nbsp;</p> 
+  <pre><code class="language-java">class Example {
+    public static void main(String[] args){
+        int[] mas = {1, 6, 4, 3, 9, 4, 5, 2, 1};
+        for(int r: mas){
+            System.out.println(r);
+        }
+    }
+}</code></pre> 
+  <p><a href="https://javarush.ru/groups/posts/for-each-java" rel="noopener noreferrer nofollow">Ссылка на JavaRush</a>, где можно&nbsp;более подробно&nbsp;почитать об этом.</p>
+ </body>
+</html>

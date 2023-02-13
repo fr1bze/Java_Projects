@@ -1,0 +1,36 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Вывод двумерного массива на экран</h1> 
+  <p>Вывести на экран двумерный массив можно с помощью всё тех же двух циклов:</p> 
+  <pre><code class="language-java">for (int i = 0; i&lt;n; i++){
+    for (int j = 0; j&lt;m; j++){
+        System.out.print(mas[i][j]+" ");
+    }
+    System.out.println();
+}</code></pre> 
+  <p>С помощь команды &nbsp;<strong>System.out.print()&nbsp;</strong>мы выводим элементы массива, не переходя на следующую строку. В тоже время, каждый раз, когда внутренний цикл отрабатывает, мы делаем переход на следующую строку с помощью команды&nbsp;<strong>System.out.println().</strong></p> 
+  <p>Такими образом, создание, заполнение&nbsp;и вывод двумерного массива должны выглядеть примерно так:</p> 
+  <pre><code class="language-java">class A {
+    public static void main(String[] args) {
+
+        // пример создания
+        int n = 5;
+        int m = 6;
+        int[][] mas = new int[n][m];
+
+        // пример заполнения
+        for (int i = 0; i&lt;n; i++)
+            for (int j = 0; j&lt;m; j++)
+                mas[i][j] = i*m + j;
+
+        //пример вывода
+        for (int i = 0; i&lt;n; i++){
+            for (int j = 0; j&lt;m; j++)
+                System.out.print(mas[i][j]+" ");
+            System.out.println();
+        }
+    }
+}</code></pre>
+ </body>
+</html>

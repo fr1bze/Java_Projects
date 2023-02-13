@@ -1,0 +1,43 @@
+<html>
+ <head></head>
+ <body>
+  <h1><strong style="font-size: 1.17em; text-align: inherit;">Выход из метода</strong></h1> 
+  <p>Оператор <strong>return </strong>применяется не только для возвращения значения из метода, но и для выхода из метода. В подобном качестве оператор <strong>return</strong> применяется в методах, которые ничего не возвращают, то есть имеют тип <strong>void</strong>:</p> 
+  <pre><code>public class Program{
+    public static void main (String args[]){
+&nbsp;&nbsp;&nbsp;&nbsp;    daytime(7);&nbsp;&nbsp;&nbsp;&nbsp; // Good morning
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daytime(13);&nbsp;&nbsp;&nbsp; // Good after noon
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; daytime(32);&nbsp;&nbsp;&nbsp; //
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daytime(56);&nbsp;&nbsp;&nbsp; //
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daytime(2);&nbsp;&nbsp;&nbsp;&nbsp; // Good night&nbsp;&nbsp;&nbsp;&nbsp;
+    }
+&nbsp;&nbsp;
+    static void daytime(int hour){
+        if (hour &gt;24 || hour &lt; 0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        if(hour &gt; 21 || hour &lt; 6)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            System.out.println("Good night");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        else if(hour &gt;= 15)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Good evening");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if(hour &gt;= 11)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            System.out.println("Good after noon");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            System.out.println("Good morning");&nbsp;&nbsp;&nbsp;&nbsp;
+    }
+}</code></pre> 
+  <p><br> Если переданное в метод <strong>datetime</strong> значение больше 24 или меньше 0, то просто выходим из метода. Возвращаемое значение после <strong>return</strong> указывать в этом случае не нужно.</p> 
+  <h1><strong>break vs return</strong></h1> 
+  <p>Ранее мы с вами проходили оператор <strong>break</strong>, который останавливает выполнение цикла, но у него был один недостаток.&nbsp;Если вы используете вложенный цикл, то <strong>break</strong>&nbsp;сможет остановить только один цикл, но не оба сразу. А <strong>return</strong> может. Функция завершится после выполнения оператора <strong>return </strong>на какой бы степени вложенности он не был. Вот пример функции, которая принимает на вход массив строк <strong>lines</strong> и слово <strong>prototype</strong>. Эта функция отвечает на вопрос: есть ли среди&nbsp;слов в этом массиве искомое&nbsp;слово. Обратите внимание, что нужно искать не подстроку, а именно слово.</p> 
+  <pre><code class="language-java">static boolean find_word(String[] lines, String prototype){
+    prototype = prototype.lower();
+    for (String line: lines){
+        String[] words_in_lines = line.split(" ");
+        for(String word: words_in_lines){
+            if (word.lower().equals(prototype))
+                return true;
+        }
+    }
+    return false;
+}</code></pre>
+ </body>
+</html>

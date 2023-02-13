@@ -1,0 +1,25 @@
+type: theory
+custom_name: Free Response
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // This is a free response task. You can use this editor as a playground
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/input.txt
+  visible: true
+  learner_created: true
+- name: src/output.txt
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  time: Wed, 17 Aug 2022 07:01:52 UTC
+record: -1
+post_submission_on_open: false

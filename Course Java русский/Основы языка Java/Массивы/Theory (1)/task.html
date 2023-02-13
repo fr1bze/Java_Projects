@@ -1,0 +1,65 @@
+<html>
+ <head></head>
+ <body>
+  <h1><strong>Считывание массива</strong></h1> 
+  <p>С помощью индексации мы можем считывать массив и выводить его на экран, давайте посмотрим на код, который поможет нам считать значения с клавиатуры и сохранить их в массив. Пусть сначала вводится число n, а потом n чисел, которые нужно считать.&nbsp;</p> 
+  <pre><code class="language-java">import java.util.Scanner;
+
+class A{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i &lt; n; i++)
+            a[i] = sc.nextInt();
+        // теперь в массиве а хранятся все введённые n чисел
+    }
+}</code></pre> 
+  <h1><strong>Вывод массива на экран</strong></h1> 
+  <p>Хорошо, с одной задачей справились, теперь давайте попробуем вывести введённые значения на экран.&nbsp;</p> 
+  <pre><code class="language-java">import java.util.Scanner;
+
+class A{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i &lt; n; i++)
+            a[i] = sc.nextInt();
+        // теперь в массиве а хранятся все введённые n чисел
+        System.out.println(a);
+    }
+}</code></pre> 
+  <p>Запустим программу, введём какие-нибудь числа (например 3 9 2 7) и увидим в консоли нечто подобное:</p> 
+  <pre><code>[I@2f0e140b</code></pre> 
+  <p>Давайте разберёмся, что же появилось на экране. Массив - не примитивный тип данных, поэтому его просто так на экран не вывести. Информацию в консоли можно разбить на 2 части - до&nbsp;и после знака @. До собаки указывается тип данных, который вывелся, а после - адрес в памяти компьютера. Обратите внимание, что у вас вторая часть отличается от той, что в примере. А вот первая - такая же: "[I". Это говорит о том, что мы имеем дело с массивом, в котором лежат целые числа.</p> 
+  <p>Но как же тогда вывести массив на экран? Поможет простой цикл. Например такой код выведет массив на экран построчно:</p> 
+  <pre><code class="language-java">import java.util.Scanner;
+
+class A{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i &lt; n; i++)
+            a[i] = sc.nextInt();
+        for (int i = 0; i &lt; n; i++)
+            System.out.println(a[i]);
+    }
+}</code></pre> 
+  <p>Для вывода в на одной строк можно изменить последний цикл так:</p> 
+  <pre><code class="language-java">import java.util.Scanner;
+
+class A{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i &lt; n; i++)
+            a[i] = sc.nextInt();
+        for (int i = 0; i &lt; n; i++)
+            System.out.print(a[i] + " ");
+    }
+}</code></pre>
+ </body>
+</html>

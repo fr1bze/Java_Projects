@@ -1,0 +1,23 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Programm{
+
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            String number = sc.nextLine();
+            format_number(number);
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 27 Jul 2022 20:09:47 UTC
+record: -1

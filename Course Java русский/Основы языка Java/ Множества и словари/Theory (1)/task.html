@@ -1,0 +1,41 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Множества</h1> 
+  <p>Множество - неупорядоченный набор уникальных элементов.</p> 
+  <p>Для создания объекта <strong>HashSet</strong> можно воспользоваться одним из следующих конструкторов:</p> 
+  <ul> 
+   <li> <p><code>HashSet()</code>: создает пустое множество</p> </li> 
+  </ul> 
+  <p>Про методы множеств можно почитать <a href="http://java-online.ru/java-set.xhtml" rel="noopener noreferrer nofollow">здесь</a>.</p> 
+  <p>Пример создания множества и работы с ним:</p> 
+  <pre><code class="language-java">import java.util.HashSet;
+ 
+public class Program{
+      
+    public static void main(String[] args) {
+          
+        HashSet&lt;String&gt; states = new HashSet&lt;String&gt;();
+          
+        // добавим в список ряд элементов
+        states.add("Germany");
+        states.add("France");
+        states.add("Italy");
+        // пытаемся добавить элемент, который уже есть в коллекции
+        boolean isAdded = states.add("Germany");
+        System.out.println(isAdded);    // false
+        
+        System.out.printf("Set contains %d elements \n", states.size());    // 3
+          
+        for(String state : states){
+          
+            System.out.println(state);
+        }
+        // удаление элемента
+        states.remove("Germany");
+          
+
+    }
+}</code></pre>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  <h1>IP-адрес</h1> 
+  <p>Для того чтобы выходить в Интернет, каждому компьютеру присваивается так называемый IP-адрес. Он состоит из четырех целых чисел в диапазоне от 0 до 255, разделенных точками. В следующих трех строках показаны три правильных IP-адреса:</p> 
+  <pre>127.0.0.0
+192.168.0.01
+255.00.255.255
+Напишите программу, которая определяет, является ли заданная строка правильным IP-адресом.</pre> 
+  <h3>Входные данные</h3> 
+  <p>На вход программе подается строка длиной не более 15 символов, которая включает цифры и&nbsp;точки.</p> 
+  <h3>Выходные данные</h3> 
+  <p>Если строка является правильным IP-адресом, необходимо вывести YES, иначе NO.</p> 
+  <h3>Примечание:</h3> 
+  <p>У вас не получится просто так взять и создать строку, которая содержит точку. Иначе говоря строчка кода:</p> 
+  <pre><code class="language-java">String s = ".";</code></pre> 
+  <p>просто на просто не сработает. Точнее сработает неверно. Для корректного создания строки, содержащей точку используйте экранирование.</p> 
+  <pre><code class="language-java">String s = "\\.";</code></pre>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">192.168.1.2</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">YES</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">192.11.690.0</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">67.67.67</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">NO</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

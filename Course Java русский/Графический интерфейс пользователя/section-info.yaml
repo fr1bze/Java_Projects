@@ -1,0 +1,13 @@
+content:
+- Графика в Java. Классы JFrame, JPanel. Примитивные фигуры
+- Добавление изображений. Анимация. Класс Timer
+- Обработка событий клавиатуры. KeyListener. Оператор switch
+- Обработка событий мыши. MouseListener. MouseMotionListener
+- Диалоговые окна. JOptionPane
+- Основные Виджеты в GUI
+- Создание GUI с помощью дизайнера
+- Введение в Базы данных. SQLite
+- SQL2. SELECT. UPDATE. DELETE
+- Java + SQL
+- JTable. GUI + JAVA + SQL
+- Управление проектом

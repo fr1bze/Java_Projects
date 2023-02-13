@@ -1,0 +1,46 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Реализация на Java + API + JSON</h1> 
+  <p>Для работы с JSON нам понадобится сторонняя библиотека. Будем использовать <strong>org.json</strong>.&nbsp;</p> 
+  <p>Скачать её можно <a href="https://github.com/stleary/JSON-java" rel="noopener noreferrer nofollow">здесь</a>.</p> 
+  <p>Вот пример получения данных без JSON.</p> 
+  <pre><code class="language-java">import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class Main {
+    public static void main(String[] args) throws java.net.URISyntaxException, IOException, InterruptedException {
+        HttpRequest request = HttpRequest.newBuilder().uri(new URI("http://numbersapi.com/17/trivia")).GET().build();
+        HttpResponse&lt;String&gt; response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println(response.body());
+    }
+}</code></pre> 
+  <p>И второй пример кода обработки JSON.</p> 
+  <pre><code class="language-java">import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import org.json.*;
+
+public class Main {
+    public static void main(String[] args) throws java.net.URISyntaxException, IOException, InterruptedException {
+        int n = 5;
+        HttpRequest request = HttpRequest.newBuilder().uri(new URI("http://jservice.io/api/random?count=" + n)).GET().build();
+        HttpResponse&lt;String&gt; response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+        String jsonString = response.body().toString();
+        System.out.println(jsonString);
+        JSONArray array = new JSONArray(jsonString);
+        for (int i = 0; i &lt; n; i++){
+            JSONObject obj = array.getJSONObject(i);
+            String answer = (String) obj.get("answer");
+            String question = (String) obj.get("question");
+            System.out.println(question + " - " + answer);
+        }
+    }
+}</code></pre>
+ </body>
+</html>

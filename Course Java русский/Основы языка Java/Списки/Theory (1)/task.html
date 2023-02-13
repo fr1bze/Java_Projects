@@ -1,0 +1,76 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Пример создания и вывода в строку.&nbsp;</h1> 
+  <p>Для создания списка нам понадобится тип&nbsp;данных <strong>ArrayList</strong>. Его придётся импортировать. Например, создание списка может выглядеть так:</p> 
+  <pre><code class="language-java">import java.util.ArrayList;
+
+class Example {
+    public static void main(String[] args){
+        ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+    }
+}</code></pre> 
+  <p>Вывести список строк, как и массив строк,&nbsp;очень легко с помощью метода <strong>join.</strong> Если у вас есть список list, то сделать это можно так:</p> 
+  <pre><code class="language-java">System.out.println(String.join(" ", list));</code></pre> 
+  <p>Этот простой код выведет ваш список через пробел.</p> 
+  <h1>Методы списков</h1> 
+  <p>Основные методы, которые могут понадобится:</p> 
+  <table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 900px;"> 
+   <thead> 
+    <tr> 
+     <th>Методы</th> 
+     <th>Описание</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr> 
+     <td>sp.add(index, obj)</td> 
+     <td>добавляет в список по индексу index объект obj</td> 
+    </tr> 
+    <tr> 
+     <td>sp.addAll(index, col)</td> 
+     <td>добавляет в список по индексу index все элементы списка col. Если в результате добавления список был изменен, то возвращается true, иначе возвращается false</td> 
+    </tr> 
+    <tr> 
+     <td>sp.get(index)</td> 
+     <td>возвращает объект из списка по индексу index</td> 
+    </tr> 
+    <tr> 
+     <td>sp.set(index, obj)</td> 
+     <td>присваивает значение объекта obj элементу, который находится по индексу index</td> 
+    </tr> 
+    <tr> 
+     <td>sp.indexOf(obj)</td> 
+     <td>возвращает индекс первого вхождения объекта obj в список. Если объект не найден, то возвращается -1</td> 
+    </tr> 
+    <tr> 
+     <td>sp.lastIndexOf(obj)</td> 
+     <td>возвращает индекс последнего вхождения объекта obj в список. Если объект не найден, то возвращается -1</td> 
+    </tr> 
+    <tr> 
+     <td>sp.remove(index)</td> 
+     <td>удаляет объект из списка по индексу index, возвращая при этом удаленный объект</td> 
+    </tr> 
+    <tr> 
+    </tr> 
+    <tr> 
+     <td>sp.toArray()</td> 
+     <td>превращает список в массив</td> 
+    </tr> 
+    <tr> 
+     <td>sp.contains(obj)</td> 
+     <td>проверяет, есть ли элемент obj в списке sp. Возвращает значение boolean</td> 
+    </tr> 
+    <tr> 
+     <td>sp.size()</td> 
+     <td>находит размер списка (количество элементов)</td> 
+    </tr> 
+    <tr> 
+     <td>sp.subList( start, end)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td> 
+     <td>получает набор элементов, которые находятся в списке между индексами start и end</td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <p>Как я уже говорил раньше, нет смысла переделывать уже хорошо сделанную работу, поэтому дальше мы отправляемся на сайт <a href="https://metanit.com/java/tutorial/5.2.php" rel="noopener noreferrer nofollow">метанит</a>, где можем посмотреть, какие действия можно совершать со списками. Так же про списки хорошо написано на&nbsp;сайте <a href="https://vertex-academy.com/tutorials/ru/list-java-primer/" rel="noopener noreferrer nofollow">академии Vertex</a>. Оттуда были использованы картинки на предыдущем слайде.&nbsp; А ещё очень подробный разбор на <a href="http://developer.alexanderklimov.ru/android/java/arraylist.php" rel="noopener noreferrer nofollow">сайте Климова</a>.</p>
+ </body>
+</html>

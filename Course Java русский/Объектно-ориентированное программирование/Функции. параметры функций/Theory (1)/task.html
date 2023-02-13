@@ -1,0 +1,44 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Параметры</h1> 
+  <p>С помощью параметров мы можем передать в методы различные данные, которые будут использоваться для вычислений. Например:</p> 
+  <pre><code>static void sum(int x, int y){
+&nbsp;&nbsp;&nbsp;&nbsp;int z = x + y;
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(z);
+}</code></pre> 
+  <p>Данная функция принимает два параметра - два числа, складывает их и выводит их сумму на консоль.</p> 
+  <p><br> А при вызове этого метода в программе нам необходимо передать на место параметров значения, которые соответствуют типу параметра:</p> 
+  <pre><code>public class Program{
+
+&nbsp;&nbsp;&nbsp;&nbsp;public static void main (String args[]){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a = 6;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b = 8;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum(a, b);&nbsp; // 14
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum(3, a);&nbsp; // 9
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum(5, 23); // 28
+
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;static void sum(int x, int y){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int z = x + y;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(z);
+
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</code></pre> 
+  <p><br> Поскольку метод <strong>sum</strong> принимает два значения типа<strong> int</strong>, то на место параметров надо передать два значения типа <strong>int</strong>. Значения, которые передаются на место параметров, еще называются&nbsp;аргументами. Значения передаются параметрам по позиции, то есть первый аргумент первому параметру, второй аргумент - второму параметру и так далее.</p> 
+  <p>Рассмотрим другой пример:</p> 
+  <pre><code>public class Program{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    public static void main (String args[]){&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        display("Tom", 34);
+        display("Bob", 28);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display("Sam", 23);&nbsp;&nbsp;&nbsp;&nbsp;
+    }
+&nbsp;&nbsp;&nbsp;&nbsp;static void display(String name, int age){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(name);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(age);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</code></pre> 
+  <p><br> Метод <strong>display</strong> принимает два параметра. Первый параметр представляет тип <strong>String</strong>, а второй - тип <strong>int</strong>. Поэтому при вызове метода вначале в него надо передать строку, а затем число.</p>
+ </body>
+</html>

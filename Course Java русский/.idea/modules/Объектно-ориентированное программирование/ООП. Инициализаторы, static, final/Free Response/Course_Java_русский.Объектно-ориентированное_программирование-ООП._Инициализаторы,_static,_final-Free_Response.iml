@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Объектно-ориентированное_программирование-ООП._Инициализаторы,_static,_final-Free_Response" external.linked.project.path="$MODULE_DIR$/../../../../../Объектно-ориентированное программирование/ООП. Инициализаторы, static, final/Free Response" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Course_Java_русский" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Объектно-ориентированное программирование/ООП. Инициализаторы, static, final/Free Response">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Объектно-ориентированное программирование/ООП. Инициализаторы, static, final/Free Response/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Объектно-ориентированное программирование/ООП. Инициализаторы, static, final/Free Response/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Объектно-ориентированное программирование/ООП. Инициализаторы, static, final/Free Response/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

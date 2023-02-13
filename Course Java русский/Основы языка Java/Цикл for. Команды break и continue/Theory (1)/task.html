@@ -1,0 +1,27 @@
+<html>
+ <head></head>
+ <body>
+  <p>Циклы - неотъемлемая часть программирования, и мы познакомились с ними на предыдущем занятии. Но узнали мы про них далеко не всё. На этом уроке мы узнаем об&nbsp;очень важных ключевых словах - <strong>break</strong> и <strong>continue</strong>, об особенностях <strong>Java</strong>&nbsp;при работе с <strong>break</strong>, что такое флаги,<strong>&nbsp;</strong>а&nbsp;также продолжим изучать типовые задачи в программировании.</p> 
+  <p style="text-align: center;"><img alt="" src="https://ucarecdn.com/a1515902-5d6d-4c36-ae29-ab13be8100ca/"></p> 
+  <h1>break и continue</h1> 
+  <p>На самом деле с этими командами всё очень просто. Команда <strong>break</strong> мгновенно завершает любой из циклов:</p> 
+  <pre><code class="language-java">for (int i = 0; i &lt; 15; i++){
+    if (i == 9){
+        System.out.println("9 найдено");
+        break;
+    }
+    System.out.println("это число " + i);
+}
+System.out.println("конец программы");</code></pre> 
+  <p>А команда <strong>continue</strong> мгновенно завершает текущую итерацию:</p> 
+  <pre><code class="language-java">for (int i = 0; i &lt; 15; i++){
+    if (i == 9){
+        System.out.println("9 найдено");
+        continue;
+    }
+    System.out.println("это число " + i);
+}
+System.out.println("конец программы");</code></pre> 
+  <p>Если до этого момента мы изучали только необходимые конструкции, без которых нельзя обойтись, то эти же команды такими не являются. Можно написать любую программу и без них, но они могут упростить нам жизнь. Например <strong>break</strong> поможет нам не делать лишних операций, а <strong>continue</strong> упростит фильтрацию.</p>
+ </body>
+</html>

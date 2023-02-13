@@ -1,0 +1,22 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class MyProgram{
+        public static void main(String[] args){
+            System.out.println("#  - Это комментарий) Стоп, это не тот язык");
+            System.out.println("// - Это комментарий) Это не сложно");
+            System.out.println("// - Это не комментарий) Это не сложно");
+            System.out.println("// - Это комментарий) Это сложно");
+            System.out.println("// - Это не комментарий) Это не сложно");
+            System.out.println("можно даже попробовать многострочный комментарий");
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 30 Jun 2022 21:07:54 UTC
+record: -1

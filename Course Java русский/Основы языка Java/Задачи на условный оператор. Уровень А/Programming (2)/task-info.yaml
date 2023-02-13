@@ -1,0 +1,31 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class MyProgram{
+        public static void main(String[] args){
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: |-
+    <html>[+] Test #1. OK
+    [+] Test #2. OK
+    [+] Test #3. OK
+    [+] Test #4. OK
+    [+] Test #5. OK
+    [+] Test #6. OK
+    [+] Test #7. OK
+    [+] Test #8. OK
+    [+] Test #9. OK
+    [+] Test #10. OK
+
+    10 of 10 test(s) passed.</html>
+  time: Sat, 02 Jul 2022 10:23:30 UTC
+record: -1

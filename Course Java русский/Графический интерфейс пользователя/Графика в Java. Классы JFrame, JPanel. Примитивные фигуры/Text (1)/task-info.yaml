@@ -1,0 +1,22 @@
+type: string
+custom_name: Text
+files:
+- name: answer.txt
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 27
+    placeholder_text: type your solution here
+    initial_state:
+      length: 23
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+  text: type your solution here
+  learner_created: false
+- name: snowMan.java
+  visible: true
+  learner_created: true
+status: Solved
+record: -1

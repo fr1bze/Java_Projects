@@ -1,0 +1,23 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Example{
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            String s = sc.nextLine();
+            sortByLength(s);
+        }
+
+        //разместите свою функцию, например здесь
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Tue, 26 Jul 2022 11:57:13 UTC
+record: -1

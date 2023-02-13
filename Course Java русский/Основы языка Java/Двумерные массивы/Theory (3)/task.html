@@ -1,0 +1,34 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Многомерные массивы</h1> 
+  <p>Помимо одномерных и двумерных массивов можно создавать массивы любой размерности, которая вам понадобится. Например, код для создания трёхмерного массива, хранящего, скажем, изображения будет выглядеть примерно так:</p> 
+  <pre><code class="language-java">class A {
+    public static void main(String[] args) {
+
+        // пример создания
+        int n = 1080;
+        int m = 1920;
+        int p = 3;
+        int[][][] mas = new int[n][m][p];
+
+        // пример заполнения
+        for (int i = 0; i&lt;n; i++)
+            for (int j = 0; j&lt;m; j++)
+                for (int k = 0; k &lt; p; k++)
+                    mas[i][j][k] = 0;
+
+        //пример вывода
+        for (int i = 0; i &lt; n; i++){
+            for (int j = 0; j &lt; m; j++){
+                System.out.print("(");
+                for (int k = 0; k &lt; p; k++)
+                    System.out.print(mas[i][j][k] + " ");
+                System.out.println(")");
+            }
+            System.out.println();
+        }
+    }
+}</code></pre>
+ </body>
+</html>

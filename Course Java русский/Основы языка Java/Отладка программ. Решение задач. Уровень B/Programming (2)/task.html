@@ -1,0 +1,34 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Исправьте Код!</h1> 
+  <p>Вася заказал посылку из интернет магазина в&nbsp;постамат. Через некоторое время ему пришло сообщение с пинкодом, который, в том числе,&nbsp;может начинаться с 0. Постамат даёт пользователю 5 попыток ввода пинкода, если пользователь вводит неправильный пинкод, то система отправляет СМС с новым пинкодом. Определите, сможет ли&nbsp;Вася забрать свою посылку?&nbsp;</p> 
+  <p>На вход программе даются строки попарно: пароль, который пришёл Васе и пароль, который он ввёл. Если Вася&nbsp;вводит неверный пароль, то на экран выводится "INCORRECT n" (где n - номер попытки), а&nbsp;если правильный, то "CORRECT". Если Вася исчерпал все попытки, то появляется строка "Error".</p> 
+  <p>Для решения этой задачи программист написал следующий код:</p> 
+  <pre><code class="language-java">import java.util.Scanner;
+
+class A{
+    public void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int counter = 1;
+        boolean pin_code_coincided = true;
+        while (true){
+            String correct = sc.nextLine();
+            String vasya = sc.nextLine();
+            counter++;
+            if(correct.equals(vasya)){
+                System.out.println("СORRECT");
+                break;
+            }
+            System.out.println("INCORRECT" + counter);
+        }
+        if (!pin_code_coincided){
+            System.out.println("Error");
+        }else{
+            System.out.println("CORRECT");
+        }
+    }
+}</code></pre> 
+  <p>Найдите ошибки в программе и решите задачу.</p>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1234<br>1235<br>3478<br>1234<br>5623<br>5623</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">INCORRECT 1<br>INCORRECT 2<br>CORRECT<br></code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1234<br>1235<br>3478<br>1234<br>5623<br>5624<br>0534<br>5623<br>4512<br>3214</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">INCORRECT 1<br>INCORRECT 2<br>INCORRECT 3<br>INCORRECT 4<br>INCORRECT 5<br>Error</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

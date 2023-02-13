@@ -1,0 +1,27 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: |-
+    <html>[+] Test #1. OK
+    [+] Test #2. OK
+    [+] Test #3. OK
+    [+] Test #4. OK
+    [+] Test #5. OK
+    [+] Test #6. OK
+
+    6 of 6 test(s) passed.</html>
+  time: Fri, 01 Jul 2022 15:58:51 UTC
+record: -1

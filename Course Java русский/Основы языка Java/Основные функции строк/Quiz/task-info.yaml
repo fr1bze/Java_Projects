@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Ошибку
+- text: Массив, выведенный на экран в строку
+- text: строку a
+- text: Массив, выведенный на экран в столбик
+- text: Указание на тип данных и место в памяти компьютера
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 09 Jul 2022 12:43:43 UTC
+record: -1
+selected_options:
+- 4
+local_check: true

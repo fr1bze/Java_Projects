@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Цикл For - цикл со счётчиком</h1> 
+  <p>Тоже очень распространённый цикл, которым все пользуются. Является модификацией цикла <strong>while</strong>. Давайте снова взглянем на код&nbsp;из предыдущей задачи:</p> 
+  <pre><code>public class A {
+    public static void main(String[] args) {
+    	int i = 1;
+    	while(i &lt; 101) {
+    	    System.out.println(i++);
+    	}
+        System.out.println("end");
+    }
+}</code></pre> 
+  <p>Создание переменной, условие для неё и её увеличение (изменение) стали так часто встречаться, что было решено просто записывать их в одном месте. Общий вид записи цикла for:</p> 
+  <pre><code>for (&lt;создание переменной&gt;;&lt;условие для неё&gt;;&lt;её изменение&gt;){
+    &lt;команды&gt;
+}
+&lt;продолжение выполенения программы&gt;</code></pre> 
+  <p>Давайте посмотрим на код этой же самой программы, только с использованием цикла <strong>for</strong>:</p> 
+  <pre><code>public class A {
+    public static void main(String[] args) {
+    	for(int i = 1; i &lt; 101; i++) {
+    	    System.out.println(i);
+    	}
+        System.out.println("end");
+    }
+}</code></pre>
+ </body>
+</html>

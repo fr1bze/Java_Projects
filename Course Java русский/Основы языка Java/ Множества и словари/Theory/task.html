@@ -1,0 +1,53 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Словари</h1> 
+  <p><strong>HashMap</strong>&nbsp;представляет отображение или иначе говоря словарь , где каждый элемент представляет пару "ключ-значение". При этом все ключи уникальные. Такие коллекции облегчают поиск элемента, если нам известен ключ - уникальный идентификатор объекта.</p> 
+  <ul> 
+   <li> <p><code>void clear()</code>: очищает коллекцию</p> </li> 
+   <li> <p><code>boolean containsKey(Object k)</code>: возвращает true, если коллекция содержит ключ k</p> </li> 
+   <li> <p><code>boolean containsValue(Object v)</code>: возвращает true, если коллекция содержит значение v</p> </li> 
+   <li> <p><code>boolean equals(Object obj)</code>: возвращает true, если коллекция идентична коллекции, передаваемой через параметр obj</p> </li> 
+   <li> <p><code>boolean isEmpty</code>: возвращает true, если коллекция пуста</p> </li> 
+   <li> <p><code>V get(Object k)</code>: возвращает значение объекта, ключ которого равен k. Если такого элемента не окажется, то возвращается значение&nbsp;<code>null</code></p> </li> 
+   <li> <p><code>V getOrDefault(Object k, V defaultValue)</code>: возвращает значение объекта, ключ которого равен k. Если такого элемента не окажется, то возвращается значение&nbsp;<code>defaultVlue</code></p> </li> 
+   <li> <p><code>V put(K k, V v)</code>: помещает в коллекцию новый объект с ключом k и значением v. Если в коллекции уже есть объект с подобным ключом, то он перезаписывается. После добавления возвращает предыдущее значение для ключа k, если он уже был в коллекции. Если же ключа еще не было в коллекции, то возвращается значение&nbsp;<code>null</code></p> </li> 
+   <li> <p><code>V putIfAbsent(K k, V v)</code>: помещает в коллекцию новый объект с ключом k и значением v, если в коллекции еще нет элемента с подобным ключом.</p> </li> 
+   <li> <p><code>Set&lt;K&gt; keySet()</code>: возвращает набор всех ключей отображения</p> </li> 
+   <li> <p><code>Collection&lt;V&gt; values()</code>: возвращает набор всех значений отображения</p> </li> 
+   <li> <p><code>V remove(Object k)</code>: удаляет объект с ключом k</p> </li> 
+   <li> <p><code>int size()</code>: возвращает количество элементов коллекции</p> </li> 
+  </ul> 
+  <p>Более подробно тут:&nbsp;<a href="https://metanit.com/java/tutorial/5.8.php" rel="noopener noreferrer nofollow">тык</a>.</p> 
+  <p>Вот пример использования некоторых из них:</p> 
+  <pre><code>import java.util.HashMap;
+import java.util.Scanner;
+
+class A {
+    public static void main(String[] args) {
+
+        HashMap&lt;String, String&gt; human = new HashMap&lt;String, String&gt;();
+        human.put("name", "Wlad");
+        human.put("secondName", "Kowalew");
+        human.put("age", "25");
+        human.put("proffesion", "teacher");
+
+        System.out.println("-----------------------------");
+        System.out.println("Size: " + human.size());
+        System.out.println(human.isEmpty() ? "empty" : "not empty");
+        System.out.println(human.getOrDefault("age", "None"));
+        System.out.println(human.getOrDefault("Rge", "None"));
+        System.out.println("-----------------------------");
+
+        for (String key: human.keySet()){
+            System.out.println(key + ": " + human.get(key));
+        }
+        human.remove("name");
+        System.out.println("-----------------------------");
+        for (String key: human.keySet()){
+            System.out.println(key + ": " + human.get(key));
+        }
+    }
+}</code></pre>
+ </body>
+</html>

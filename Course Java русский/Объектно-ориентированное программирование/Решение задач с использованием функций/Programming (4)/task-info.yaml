@@ -1,0 +1,28 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Programm {
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            int[] mas = new int[n];
+            for (int i = 0; i < n; i++)
+                mas[i] = sc.nextInt();
+            sort(mas);
+            for(int i: mas)
+                System.out.print(i + " ");
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 30 Jul 2022 05:35:07 UTC
+record: -1

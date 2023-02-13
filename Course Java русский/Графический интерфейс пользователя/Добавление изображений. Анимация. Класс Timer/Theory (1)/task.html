@@ -1,0 +1,34 @@
+<html>
+ <head></head>
+ <body>
+  <h1>Класс Timer (java.swing)</h1> 
+  <p>Класс <strong>Timer</strong> из библиотеки <strong>Swing</strong> очень прост в работе. Для него достаточно просто указать количество миллисекунд и&nbsp;&nbsp;<strong>ActionListener</strong>, который будет принимать событие. Посмотрим на код:</p> 
+  <pre><code class="language-java">import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        ActionListener messageAL = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                Date date = new Date();
+                System.out.println("Новое Сообщение! Получено в " + dateFormat.format(date));
+            }
+        };
+        Timer myTimer = new Timer(3000, messageAL);
+        myTimer.start();
+        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
+    }
+}</code></pre> 
+  <p>Сначала создаётся ActionListener, в котором есть маленькая функция, которая выводит на экран сообщение. Не будем останавливаться подробно на её коде, так как до его назначения легко догадаться. После создания обработчика мы создаём Timer, который будет вызывать событие каждые 3 секунды. Это событие будет обрабатывать на ActionListener. После того, как мы создали таймер, его нужно запустить.</p> 
+  <p>Последние 2 строчки добавлены лишь&nbsp;для того, чтобы программа не завершалась. При работе с графикой их прописывать не надо, так как программа не завершится до тех пор, пока окно не закроется.</p> 
+  <p><a href="https://docs.oracle.com/javase/7/docs/api/javax/swing/Timer.html" rel="noopener noreferrer nofollow">Официальная документация</a></p>
+ </body>
+</html>

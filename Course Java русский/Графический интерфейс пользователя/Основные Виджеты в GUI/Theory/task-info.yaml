@@ -1,0 +1,45 @@
+type: theory
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/Text.java
+  visible: true
+  learner_created: true
+- name: src/TextWithSlider.java
+  visible: true
+  learner_created: true
+- name: src/Clicker.java
+  visible: true
+  learner_created: true
+- name: src/Spinner.java
+  visible: true
+  learner_created: true
+- name: src/ComboBox.java
+  visible: true
+  learner_created: true
+- name: src/Season.java
+  visible: true
+  learner_created: true
+- name: src/TextArea.java
+  visible: true
+  learner_created: true
+- name: src/Calculator.java
+  visible: true
+  learner_created: true
+- name: src/Quiz.java
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  time: Fri, 30 Sep 2022 15:53:27 UTC
+record: -1
+post_submission_on_open: true

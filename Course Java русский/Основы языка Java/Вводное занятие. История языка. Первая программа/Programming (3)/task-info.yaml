@@ -1,0 +1,24 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class MyProgram{
+        public static void main(String[] args){
+            System.out.println("Я прекрасно понимаю разницу ");
+            System.out.print("Я прекрасно понимаю разницу ");
+            System.out.println("между System.out.println()");
+            System.out.print("между System.out.println()");
+            System.out.println("и System.out.print(). ");
+            System.out.print("и System.out.print(). ");
+            System.out.println("А ты?");
+            System.out.print("А ты?");
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Fri, 01 Jul 2022 08:06:00 UTC
+record: -1

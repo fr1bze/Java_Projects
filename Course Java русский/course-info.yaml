@@ -1,0 +1,14 @@
+title: Основы Java
+language: Russian
+summary: Курс по программированию на языке Java для учеников города Смоленска  14
+  - 16 лет. Если вы хотите освоить один из самых популярных языков программирования,
+  то вы по адресу.<br/><br/>Learn more at <a href="https://stepik.org/course/82867">https://stepik.org/course/82867</a>
+programming_language: Java
+programming_language_version: 11
+content:
+- Основы языка Java
+- Объектно-ориентированное программирование
+- Графический интерфейс пользователя
+- Работа с сетью интернет
+- Для моих студентов (только для зачёта)
+mode: Study

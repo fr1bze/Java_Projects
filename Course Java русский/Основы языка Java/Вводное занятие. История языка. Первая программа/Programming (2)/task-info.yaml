@@ -1,0 +1,17 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class MyProgram{
+        public static void main(String[] args){
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 30 Jun 2022 21:09:06 UTC
+record: -1

@@ -1,0 +1,23 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Programm{
+
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            System.out.println(factorial(n));
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 28 Jul 2022 06:51:32 UTC
+record: -1

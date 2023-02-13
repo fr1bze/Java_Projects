@@ -1,0 +1,27 @@
+type: theory
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/Motin.java
+  visible: true
+  learner_created: true
+- name: src/KeyLogger.java
+  visible: true
+  learner_created: true
+- name: src/MotionImproved.java
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  time: Tue, 27 Sep 2022 16:18:46 UTC
+record: -1
+post_submission_on_open: true

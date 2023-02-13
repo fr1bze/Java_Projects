@@ -1,0 +1,19 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Fri, 01 Jul 2022 17:22:30 UTC
+record: -1
