@@ -1,0 +1,27 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Получение информации о владельце файла и его правах
+- text: Установка TCP-соединения с удаленным компьютером
+- text: Распаковка ZIP-архива
+- text: Запуск и остановка служб ОС
+- text: Удаление непустой директории
+- text: Форматирование диска
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/FactTrailingZeros.java
+  visible: true
+  learner_created: true
+status: Unchecked
+record: -1
+local_check: false

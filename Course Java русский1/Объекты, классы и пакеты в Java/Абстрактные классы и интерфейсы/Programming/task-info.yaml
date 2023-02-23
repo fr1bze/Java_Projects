@@ -1,0 +1,14 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static double integrate(DoubleUnaryOperator f, double a, double b) {
+        return f.applyAsDouble(a);
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 26 Nov 2022 10:16:27 UTC
+record: -1

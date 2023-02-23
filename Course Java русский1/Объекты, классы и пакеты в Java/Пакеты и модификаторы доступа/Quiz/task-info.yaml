@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: пакет по умолчанию
+- text: org.stepic.java.example
+- text: java.util
+- text: java.lang
+- text: все подпакеты org.stepic.java.example
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

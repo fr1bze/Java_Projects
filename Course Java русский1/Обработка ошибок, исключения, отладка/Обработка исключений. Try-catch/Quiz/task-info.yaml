@@ -1,0 +1,47 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: catch (Exception e)
+- text: finally
+- text: catch (RuntimeException e)
+- text: catch (Error e)
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/Trees.java
+  visible: true
+  learner_created: true
+- name: src/BitArray.java
+  visible: true
+  learner_created: true
+- name: src/PalindromicSub.java
+  visible: true
+  learner_created: true
+- name: src/ZigZag.java
+  visible: true
+  learner_created: true
+- name: src/MostWater.java
+  visible: true
+  learner_created: true
+- name: src/RomanInteger.java
+  visible: true
+  learner_created: true
+status: Failed
+feedback:
+  message: Answer choices will be shuffled next time.
+  time: Thu, 09 Feb 2023 20:52:39 UTC
+record: -1
+selected_options:
+- 0
+- 1
+- 2
+local_check: false

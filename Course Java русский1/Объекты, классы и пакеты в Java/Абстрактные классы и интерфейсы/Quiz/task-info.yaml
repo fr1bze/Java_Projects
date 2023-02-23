@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Класс может наследоваться только от одного класса, но может реализовывать
+    сколько угодно интерфейсов.
+- text: Интерфейсы отличаются от абстрактных классов тем, что могут содержать только
+    публичные методы и публичные статические финальные поля.
+- text: Ключевое слово "interface" — это сокращенная запись для "abstract class".
+- text: Интерфейсы отличаются от абстрактных классов тем, что не могут содержать реализаций
+    методов.
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 26 Nov 2022 10:04:50 UTC
+record: -1
+selected_options:
+- 0
+- 1
+local_check: false

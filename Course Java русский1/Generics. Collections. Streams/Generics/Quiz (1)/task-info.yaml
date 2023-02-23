@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Получение экземпляра Optional&lt;x&gt; через Optional.empty()
+- text: Проверка (obj instanceof X)
+- text: Приведение obj к типу X
+- text: Создание массива X
+- text: Проверка (obj instanceof Optional&lt;x&gt;)
+- text: Создание экземпляра X
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

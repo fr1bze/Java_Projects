@@ -1,0 +1,5 @@
+<p>Есть следующий код:</p><pre><code class="language-java">FileInputStream fileInputStream = new FileInputStream(file);
+try (DataInputStream dataInputStream = new DataInputStream(fileInputStream)) {
+    // ...
+}
+</code></pre><p>Является ли проблемой то, что не вызван метод  fileInputStream.close()? Почему?<br></p>

@@ -1,0 +1,14 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+    }
+  learner_created: false
+- name: src/Interface.java
+  visible: true
+  learner_created: true
+status: Unchecked
+record: -1

@@ -1,0 +1,110 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Если в блоке try выполняется оператор break.
+- text: Если в блоке catch при обработке исключения случилось другое исключение.
+- text: Если во время исполнения блока try виртуальная машина "выполнила недопустимую
+    операцию и будет закрыта".
+- text: Если в блоке try вызван System.exit(0).
+- text: Если в блоке try выполняется оператор return.
+- text: Если в блоке try брошено исключение, которое обработано блоком catch.
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/Solution.java
+  visible: true
+  learner_created: true
+- name: src/Solution2.java
+  visible: true
+  learner_created: true
+- name: src/Solution3.java
+  visible: true
+  learner_created: true
+- name: src/Task4.java
+  visible: true
+  learner_created: true
+- name: src/Task1.java
+  visible: true
+  learner_created: true
+- name: src/SortString.java
+  visible: true
+  learner_created: true
+- name: src/FirstUniqueChar.java
+  visible: true
+  learner_created: true
+- name: src/CountBits.java
+  visible: true
+  learner_created: true
+- name: src/MaxProfit.java
+  visible: true
+  learner_created: true
+- name: src/validParentheses.java
+  visible: true
+  learner_created: true
+- name: src/Sqrt.java
+  visible: true
+  learner_created: true
+- name: src/ArrraysMedian.java
+  visible: true
+  learner_created: true
+- name: src/SequenceToSentence.java
+  visible: true
+  learner_created: true
+- name: src/Palindrome.java
+  visible: true
+  learner_created: true
+- name: src/OnOneLine.java
+  visible: true
+  learner_created: true
+- name: src/Nodes.java
+  visible: true
+  learner_created: true
+- name: src/RemoveElement.java
+  visible: true
+  learner_created: true
+- name: src/DeleteUniques.java
+  visible: true
+  learner_created: true
+- name: src/IntesectionOfLists.java
+  visible: true
+  learner_created: true
+- name: src/MaxGAp.java
+  visible: true
+  learner_created: true
+- name: src/ChangeValue.java
+  visible: true
+  learner_created: true
+- name: src/SingleNumbers.java
+  visible: true
+  learner_created: true
+- name: src/checkPermutation.java
+  visible: true
+  learner_created: true
+- name: src/Permutator.java
+  visible: true
+  learner_created: true
+- name: src/SubTree.java
+  visible: true
+  learner_created: true
+- name: src/Subarray.java
+  visible: true
+  learner_created: true
+- name: src/Candies.java
+  visible: true
+  learner_created: true
+- name: src/Subarrays.java
+  visible: true
+  learner_created: true
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

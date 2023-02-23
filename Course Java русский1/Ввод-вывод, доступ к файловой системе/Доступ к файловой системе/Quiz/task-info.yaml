@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Файл или директория, в зависимости от наличия символа "/" в конце переданной
+    строки pathToFile.
+- text: Файл
+- text: Ничего не создается
+- text: Директория
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: false

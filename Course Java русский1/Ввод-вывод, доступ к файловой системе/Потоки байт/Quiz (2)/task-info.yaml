@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Да, т.к. пока этот FileInputStream не закрыт, мы не можем открыть новый FileInputStream.
+- text: Да, т.к. это приведет к утечке ресурсов.
+- text: Нет, т.к. FileInputStream не использует никаких системных ресурсов, которые
+    надо освобождать.
+- text: Нет, т.к. DataInputStream в своем методе close() закроет InputStream, с которым
+    работает.
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/LongestCommonPrefix.java
+  visible: true
+  learner_created: true
+- name: src/UniqueSubstring.java
+  visible: true
+  learner_created: true
+- name: src/Versions.java
+  visible: true
+  learner_created: true
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

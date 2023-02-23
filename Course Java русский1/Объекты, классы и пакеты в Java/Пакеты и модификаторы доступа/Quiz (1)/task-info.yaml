@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Байткод класса java.math.BigDecimal включается в байткод вашего класса.
+- text: Исходный код класса java.math.BigDecimal включается в исходный код вашего
+    класса.
+- text: Можно ссылаться на класс java.math.BigDecimal по его короткому имени BigDecimal
+    в пределах Example.java.
+- text: Можно ссылаться на класс java.math.BigDecimal по его короткому имени BigDecimal
+    во всех исходных файлах вашей программы.
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

@@ -1,0 +1,30 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public Label checkLabels(TextAnalyzer[] analyzers, String text) {
+        return Label.OK;
+    }
+  learner_created: false
+- name: src/TextAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/KeyWordAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/SpamAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/NegativeTextAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/Label.java
+  visible: true
+  learner_created: true
+- name: src/TooLongTextAnalyzer.java
+  visible: true
+  learner_created: true
+status: Unchecked
+record: -1

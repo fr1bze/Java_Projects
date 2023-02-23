@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: '&amp; и =='
+- text: ^ и !=
+- text: '| и ||'
+- text: '| и !='
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+record: -1
+local_check: false

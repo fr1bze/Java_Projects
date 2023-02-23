@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: В непредсказуемом порядке, основанном на хеш-кодах строк
+- text: В порядке добавления
+- text: В обратном лексикографическом порядке
+- text: В лексикографическом порядке
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

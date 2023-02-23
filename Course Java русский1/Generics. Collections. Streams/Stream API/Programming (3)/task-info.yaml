@@ -1,0 +1,23 @@
+type: code
+custom_name: Programming
+files:
+- name: src/MailMessage.java
+  visible: true
+  text: |-
+    public static class MailMessage {
+        // implement here
+    }
+
+    public static class Salary {
+        // implement here
+    }
+
+    public static class MailService {
+        // implement here
+    }
+  learner_created: false
+- name: src/Main.java
+  visible: true
+  learner_created: true
+status: Unchecked
+record: -1

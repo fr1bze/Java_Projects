@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: В объявлении статического поля класса.
+- text: В объявлении конструктора.
+- text: В объявлении параметра метода.
+- text: В объявлении метода.
+- text: В объявлении нестатического поля класса.
+- text: В объявлении класса.
+- text: В объявлении локальной переменной.
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
+local_check: false

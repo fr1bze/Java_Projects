@@ -1,0 +1,15 @@
+type: code
+custom_name: Programming
+files:
+- name: src/AsciiCharSequence.java
+  visible: true
+  text: |-
+    public class AsciiCharSequence /* extends/implements */ {
+        // implementation
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 26 Nov 2022 10:39:26 UTC
+record: -1

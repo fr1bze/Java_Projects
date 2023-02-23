@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Интерфейс должен быть помечен аннотацией @FunctionalInterface.
+- text: 'Ровно один метод интерфейса должен быть помечен аннотацией @FunctionalInterface. '
+- text: Интерфейс должен содержать ровно один абстрактный метод.
+- text: Интерфейс должен быть из стандартной библиотеки, и в JavaDoc'е к нему должна
+    быть указана такая возможность.
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+- name: src/TwoNumbersSum.java
+  visible: true
+  learner_created: true
+- name: src/ExcelSheet.java
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 26 Nov 2022 10:05:03 UTC
+record: -1
+selected_options:
+- 2
+custom_name: Quiz
+local_check: false

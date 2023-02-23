@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: new FileInputStream(path.toFile())
+- text: new FileInputStream(path)
+- text: Paths.newInputStream(path)
+- text: Files.newInputStream(path)
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Failed
+feedback:
+  message: Wrong solution
+  time: Thu, 16 Feb 2023 12:44:00 UTC
+record: -1
+custom_name: Quiz
+local_check: false
